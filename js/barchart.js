@@ -102,8 +102,8 @@ const mouseover1 = function(event, d) {
 // to help with placemnt of tool tip 
 const mousemove1 = function(event, d) {
   //change the location data of the cursor
-  tooltip1.style("left", (event.x)+"px") 
-          .style("top", (event.y + yTooltipOffset) +"px"); 
+  tooltip1.style("left", (event.pageX)+"px") 
+          .style("top", (event.pageY + yTooltipOffset) +"px"); 
 }
 
 // TODO: What does this code do? 
@@ -218,8 +218,8 @@ d3.csv("data/barchart.csv").then((data2) => {
   // define mouse move event handler
   const mousemove2 = function(event, d) {
     //change the location data of the cursor
-    tooltip2.style("left", (event.x)+"px") 
-            .style("top", (event.y + yTooltipOffset2) +"px"); 
+    tooltip2.style("left", (event.pageX)+"px") 
+            .style("top", (event.pageY + yTooltipOffset2) +"px"); 
   }
 
   // TODO: What does this code do? 

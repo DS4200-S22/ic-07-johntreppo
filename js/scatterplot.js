@@ -90,8 +90,8 @@ d3.csv("data/scatter.csv").then((data3) => {
   // define mouse move event handler
   const mousemove3 = function(event, d) {
     //change the location data of the cursor
-    tooltip3.style("left", (event.x)+"px") 
-            .style("top", (event.y + yTooltipOffset3) +"px"); 
+    tooltip3.style("left", (event.pageX)+"px") 
+            .style("top", (event.pageY + yTooltipOffset3) +"px"); 
   }
 
   // TODO: What does this code do? 
